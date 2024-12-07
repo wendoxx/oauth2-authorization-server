@@ -1,3 +1,5 @@
+
+
 server:
   port: 9000
 
@@ -30,3 +32,12 @@ spring:
                 - "openid"
                 - "profile"
             require-authorization-consent: true
+  datasource:
+    username: postgres
+    password: 12345
+    url: jdbc:postgresql://localhost:5432/oauth2-authorization-server
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
